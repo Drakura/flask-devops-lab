@@ -11,5 +11,5 @@ python app.py
 - `/api/config` returns the configuration setting
 - `/api/report` returns the hostname, Python version, and application uptime
 
-
+#Deleted the bad texts
 #End of File
