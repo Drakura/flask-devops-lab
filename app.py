@@ -33,6 +33,7 @@ def home():
         '<h1>{{ name }}</h1>' 
         '<p>Version: {{ ver }}</p>' 
         '<p><a href="/api/health">/api/health</a></p>' 
+	'<footer>Flask DevOps Lab - Git, GitHub, and Docker Practice</footer>'
     ) 
     return render_template_string( 
         html, 
