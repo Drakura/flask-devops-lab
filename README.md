@@ -11,4 +11,7 @@ python app.py
 - `/api/config` returns the configuration setting
 - `/api/report` returns the hostname, Python version, and application uptime
 
-#Conflict B
+<<<<<<< HEAD
+=======
+#Conflict A merge
+>>>>>>> conflict/a
