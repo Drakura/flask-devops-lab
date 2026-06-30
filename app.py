@@ -43,10 +43,10 @@ def home():
   
 @app.get('/api/report') 
 def report(): 
-return jsonify({ 
-'hostname': socket.gethostname(), 
-'python_version': platform.python_version(), 
-'uptime_seconds': round(time.time() - START_TIME, 2) 
+	return jsonify({ 
+		'hostname': socket.gethostname(), 
+		'python_version': platform.python_version(), 
+		'uptime_seconds': round(time.time() - START_TIME, 2) 
 })
 
 if __name__ == '__main__': 
