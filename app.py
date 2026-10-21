@@ -32,12 +32,15 @@ def home():
     html = ( 
         '<h1>{{ name }}</h1>' 
         '<p>Version: {{ ver }}</p>' 
-        '<p><a href="/api/health">/api/health</a></p>' 
+        '<p><a href="/api/health">/api/health</a></p>'
+        '<p><a href="/api/config">/api/config</a></p>' \
+        '<p><a href="/api/report">/api/report</a></p>' \
+        '<p><a href="/api/status">/api/status</a></p>' \
 	'<footer>Flask DevOps Lab - Git, GitHub, and Docker Practice</footer>'
     ) 
     return render_template_string( 
         html, 
-        name=cfg['app_name'], 
+        name=cfg['app name'], 
         ver=cfg['version'] 
     ) 
   
@@ -54,7 +57,7 @@ def status():
 	cfg = load_config() 
 	routes = sorted(str(rule) for rule in app.url_map.iter_rules()) 
 	return jsonify({ 
-		'app name': cfg['app name'], 
+		'app_name': cfg['app name'], 
 		'version': cfg['version'], 
 		'routes': routes 
 })
